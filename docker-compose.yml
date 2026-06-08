@@ -1,0 +1,11 @@
+services:
+  dlt_mssql_to_pg:
+    build: .
+    container_name: dlt_mssql_to_pg
+    volumes:
+      - ./.dlt:/app/.dlt:ro
+      - ./logs:/app/logs
+    environment:
+      PYTHONUNBUFFERED: "1"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

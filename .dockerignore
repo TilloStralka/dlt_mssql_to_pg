@@ -1,0 +1,6 @@
+pg_dlt/
+logs/
+.git/
+__pycache__/
+*.pyc
+*.csv
